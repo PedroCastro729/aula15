@@ -26,7 +26,7 @@ int main(void){
     if(pQuadrado == NULL){
         printf("Erro ao abrir o arquivo\n");
     } else{
-        fprintf(pQuadrado, "<svg version=\"1.1\"\n width=\"300\" height=\"200\"\n xmlns=\"http://www.w3.org/2000/svg\"\n <rect x=\"%f\" y=\"%f\" width=\"%f\" height=\"%f\" fill=\"red\" />\n</svg>\n", x, y, width, height);
+        fprintf(pQuadrado, "<svg version=\"1.1\"\n width=\"300\" height=\"200\"\n xmlns=\"http://www.w3.org/2000/svg\">\n <rect x=\"%f\" y=\"%f\" width=\"%f\" height=\"%f\" fill=\"red\" />\n</svg>\n", x, y, width, height);
         fclose(pQuadrado);
     }
     
