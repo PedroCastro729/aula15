@@ -48,8 +48,8 @@ int texto(FILE *pArquivo){
     scanf("%d", &x);
     printf("Digite a coordenada y do texto: ");
     scanf("%d", &y);
-    printf("Digite o texto: ");
-    scanf("%s", texto);
+    getchar();
+    fgets(texto, 100, stdin);
 
     fprintf(pArquivo, "<text x=\"%d\" y=\"%d\">%s</text>\n", x, y, texto);
 }
