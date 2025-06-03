@@ -7,6 +7,7 @@ int main(void){
 
     printf("Digite o nome do arquivo: ");
     scanf("%49s", nome);
+    strcat(nome, ".svg");
 
     printf("Digite a largura: ");
     scanf("%f", &width);
