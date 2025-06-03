@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int retangulo(FILE *pArquivo){
     int width, height, x, y;
@@ -60,6 +61,8 @@ int main(void){
     
     printf("Digite o nome do arquivo svg: ");
     scanf("%s", nome);
+    strcat(nome, ".svg");
+
 
     FILE *pArquivo = fopen(nome, "w");
     pArquivo = fopen(nome, "w");
